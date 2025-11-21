@@ -23,12 +23,7 @@ import ClinicLanding from './components/website/ClinicLanding';
 import AssistantWidget from './components/assistant/AssistantWidget';
 import ErrorScreen from './components/demo/ErrorScreen';
 
-const API_KEY = process.env.GEMINI_API_KEY as string;
-if (typeof API_KEY !== 'string') {
-  throw new Error(
-    'Missing required environment variable: REACT_APP_GEMINI_API_KEY'
-  );
-}
+const API_KEY = process.env.API_KEY as string;
 
 /**
  * Main application component that renders the Clinic Website

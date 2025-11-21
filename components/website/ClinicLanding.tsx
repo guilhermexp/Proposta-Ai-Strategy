@@ -15,7 +15,7 @@ export default function ClinicLanding() {
                 <span className="material-symbols-outlined text-white text-sm">smart_toy</span>
              </div>
              <div className="text-lg font-bold tracking-tight text-slate-900">
-                AI Strategy <span className="text-blue-600">Partners</span>
+                Ai Xperience <span className="text-blue-600">Partners</span>
              </div>
           </div>
           <div className="hidden md:flex items-center gap-6 text-xs font-semibold uppercase tracking-widest text-slate-500">
@@ -35,9 +35,12 @@ export default function ClinicLanding() {
                     <span className="inline-block px-3 py-1 mb-6 text-xs font-bold tracking-wider text-blue-700 uppercase bg-blue-100 rounded-full">
                         Proposta de Parceria Estratégica
                     </span>
-                    <h1 className="text-5xl md:text-6xl font-serif text-slate-900 leading-tight mb-6">
-                        Implementação de <br/>
-                        <span className="text-blue-700">Inteligência Artificial</span>
+                    <h1 className="text-3xl md:text-5xl font-serif text-slate-900 leading-tight mb-6">
+                        Transformação, Ampliação Tecnológica, <br/>
+                        <span className="text-blue-700">Organização e Automação</span> <br/>
+                        <span className="text-lg md:text-2xl block mt-4 text-slate-600 font-sans font-light leading-snug">
+                            do seu negócio vinculados aos mais atuais avanços da Inteligência Artificial.
+                        </span>
                     </h1>
                     <div className="h-1 w-20 bg-blue-600 mb-8"></div>
                     <p className="text-xl text-slate-600 font-light mb-2">Dr. Thiago Paoliello | Cirurgia Plástica</p>
@@ -84,13 +87,6 @@ export default function ClinicLanding() {
                          </div>
                     </div>
                     <div className="space-y-6">
-                         <div className="flex items-start gap-4">
-                            <span className="material-symbols-outlined text-blue-600 mt-1">group</span>
-                            <div>
-                                <h4 className="font-bold text-slate-900">Alcance Digital</h4>
-                                <p className="text-slate-600 text-sm">Instagram: 427 mil seguidores</p>
-                            </div>
-                         </div>
                          <div className="flex items-start gap-4">
                             <span className="material-symbols-outlined text-blue-600 mt-1">medical_services</span>
                             <div>
@@ -248,58 +244,64 @@ export default function ClinicLanding() {
                          <div className="bg-black border-8 border-slate-900 rounded-[32px] shadow-2xl overflow-hidden relative aspect-[4/3]">
                             {/* Screen Content */}
                             <div className="absolute inset-0 bg-slate-900 flex">
-                                {/* Left: Image Analysis */}
+                                {/* Left: Image Analysis (ANTES) */}
                                 <div className="w-1/2 relative overflow-hidden border-r border-slate-800">
-                                    <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop" alt="Patient" className="w-full h-full object-cover opacity-80" />
-                                    {/* Overlay Graphics */}
+                                    <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop" alt="Patient Before" className="w-full h-full object-cover opacity-80" />
+                                    {/* Overlay Graphics - ANTES */}
                                     <svg className="absolute inset-0 w-full h-full pointer-events-none">
-                                        <path d="M 100 150 Q 150 200 200 150" stroke="rgba(59, 130, 246, 0.8)" strokeWidth="2" fill="none" strokeDasharray="4"/>
-                                        <circle cx="120" cy="250" r="10" stroke="rgba(59, 130, 246, 0.8)" strokeWidth="2" fill="rgba(59, 130, 246, 0.2)" />
-                                        <circle cx="180" cy="250" r="10" stroke="rgba(59, 130, 246, 0.8)" strokeWidth="2" fill="rgba(59, 130, 246, 0.2)" />
+                                        <path d="M 100 150 Q 150 200 200 150" stroke="rgba(239, 68, 68, 0.8)" strokeWidth="2" fill="none" strokeDasharray="4"/>
+                                        <circle cx="120" cy="250" r="10" stroke="rgba(239, 68, 68, 0.8)" strokeWidth="2" fill="rgba(239, 68, 68, 0.2)" />
+                                        <circle cx="180" cy="250" r="10" stroke="rgba(239, 68, 68, 0.8)" strokeWidth="2" fill="rgba(239, 68, 68, 0.2)" />
                                     </svg>
-                                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur text-white text-[10px] px-2 py-1 rounded font-mono">
-                                        ANÁLISE BIOMÉTRICA
+                                    <div className="absolute top-4 left-4 bg-red-500/80 backdrop-blur text-white text-[10px] px-2 py-1 rounded font-mono font-bold">
+                                        ANTES (ANÁLISE)
                                     </div>
                                 </div>
 
-                                {/* Right: AI Controls */}
-                                <div className="w-1/2 p-6 flex flex-col justify-between">
-                                    <div>
-                                        <div className="flex items-center gap-2 text-blue-400 mb-2">
-                                            <span className="material-symbols-outlined text-lg">auto_awesome</span>
-                                            <span className="text-xs font-bold uppercase tracking-widest">Cirurgia Virtual</span>
-                                        </div>
-                                        <h3 className="text-white font-light text-lg leading-tight mb-4">Simulação em Tempo Real</h3>
-                                        
-                                        <div className="space-y-3">
-                                            <div className="bg-slate-800/50 p-3 rounded-lg border border-white/5">
-                                                <div className="flex justify-between text-xs text-slate-400 mb-1">
-                                                    <span>Volume Labial</span>
-                                                    <span className="text-blue-400">+20%</span>
-                                                </div>
-                                                <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                                                    <div className="h-full w-[60%] bg-blue-500"></div>
-                                                </div>
-                                            </div>
-                                            <div className="bg-slate-800/50 p-3 rounded-lg border border-white/5">
-                                                <div className="flex justify-between text-xs text-slate-400 mb-1">
-                                                    <span>Lifting de Sobrancelha</span>
-                                                    <span className="text-blue-400">Médio</span>
-                                                </div>
-                                                <div className="h-1.5 bg-slate-700 rounded-full overflow-hidden">
-                                                    <div className="h-full w-[40%] bg-blue-500"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                {/* Right: AI Simulation (DEPOIS) */}
+                                <div className="w-1/2 relative overflow-hidden">
+                                    {/* Using the same image but with CSS filters to simulate 'After' effect: Brighter, smoother (blur then sharpen hack or just brightness/contrast), warmer */}
+                                    <img 
+                                        src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?q=80&w=2071&auto=format&fit=crop" 
+                                        alt="Patient After" 
+                                        className="w-full h-full object-cover"
+                                        style={{
+                                            filter: 'brightness(1.1) contrast(1.05) saturate(1.1) blur(0px)', 
+                                            transform: 'scale(1.02)' // Slight zoom to shift perspective slightly
+                                        }} 
+                                    />
+                                    {/* Soft light overlay for "glow" */}
+                                    <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-yellow-500/10 mix-blend-overlay"></div>
+
+                                    <div className="absolute top-4 right-4 bg-green-500/80 backdrop-blur text-white text-[10px] px-2 py-1 rounded font-mono font-bold">
+                                        DEPOIS (SIMULAÇÃO)
                                     </div>
 
-                                    {/* Voice Command Feedback */}
-                                    <div className="bg-blue-600/20 border border-blue-500/30 p-4 rounded-xl">
-                                        <div className="flex items-center gap-3 mb-2">
+                                    {/* Simulating removed imperfections by covering with subtle overlays or just relying on the 'clean' look of no red lines */}
+                                </div>
+
+                                {/* Center Divider */}
+                                <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-white/50 z-10">
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                        <span className="material-symbols-outlined text-xs text-slate-900">compare_arrows</span>
+                                    </div>
+                                </div>
+
+                                {/* UI Controls Overlay (Bottom) */}
+                                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
+                                    <div className="flex items-center justify-between">
+                                        <div className="bg-blue-600/20 border border-blue-500/30 px-3 py-2 rounded-lg backdrop-blur-md flex items-center gap-3">
                                              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                                             <span className="text-[10px] text-blue-300 uppercase font-bold">Ouvindo Dr. Thiago</span>
+                                             <p className="text-white text-xs italic">"Suavize as linhas e melhore o contorno..."</p>
                                         </div>
-                                        <p className="text-white text-sm italic">"Aplique um preenchimento sutil nos lábios e levante o olhar..."</p>
+                                        <div className="flex gap-2">
+                                            <button className="bg-white/10 hover:bg-white/20 p-2 rounded-full text-white transition-colors">
+                                                <span className="material-symbols-outlined text-sm">undo</span>
+                                            </button>
+                                            <button className="bg-blue-600 hover:bg-blue-500 px-4 py-1 rounded-full text-white text-xs font-bold transition-colors shadow-lg shadow-blue-900/50">
+                                                Aplicar
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -322,8 +324,8 @@ export default function ClinicLanding() {
                                     <span className="material-symbols-outlined text-blue-400">face_retouching_natural</span>
                                 </span>
                                 <div>
-                                    <h4 className="font-bold text-lg">Simulação Instantânea</h4>
-                                    <p className="text-slate-400 text-sm">A paciente vê na hora o potencial do resultado, aumentando o desejo e a confiança.</p>
+                                    <h4 className="font-bold text-lg">Simulação Instantânea (Antes x Depois)</h4>
+                                    <p className="text-slate-400 text-sm">A paciente vê na hora a comparação lado a lado, aumentando o desejo e a confiança.</p>
                                 </div>
                             </li>
                             <li className="flex gap-4">
@@ -610,16 +612,17 @@ export default function ClinicLanding() {
 
                     {/* Right Side: Visualização do Chat de Voz e Dashboard */}
                     <div className="flex-1 w-full">
-                        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl relative">
+                        <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl relative overflow-hidden">
                              {/* Dashboard Mockup Background */}
-                             <div className="grid grid-cols-2 gap-4 mb-6 opacity-30 blur-[1px]">
-                                 <div className="bg-slate-800 h-24 rounded-lg"></div>
-                                 <div className="bg-slate-800 h-24 rounded-lg"></div>
-                                 <div className="bg-slate-800 h-32 rounded-lg col-span-2"></div>
-                             </div>
+                             <img 
+                                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" 
+                                alt="Clinic Dashboard Data"
+                                className="absolute inset-0 w-full h-full object-cover opacity-40 blur-[1px]"
+                             />
+                             <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent"></div>
 
                              {/* Voice Interaction Overlay */}
-                             <div className="absolute inset-0 flex items-center justify-center p-6">
+                             <div className="relative z-10 flex flex-col items-center justify-center p-6">
                                  <div className="w-full max-w-md flex flex-col gap-4">
                                      
                                      {/* Doctor Message */}
@@ -638,7 +641,7 @@ export default function ClinicLanding() {
                                      </div>
 
                                      {/* AI Response Card */}
-                                     <div className="self-start bg-slate-800 border border-slate-700 text-slate-200 p-4 rounded-2xl rounded-tl-sm shadow-xl w-full">
+                                     <div className="self-start bg-slate-800/90 backdrop-blur-sm border border-slate-700 text-slate-200 p-4 rounded-2xl rounded-tl-sm shadow-xl w-full">
                                          <div className="flex items-center gap-2 mb-3 border-b border-slate-700 pb-2">
                                              <span className="material-symbols-outlined text-amber-400">graphic_eq</span>
                                              <span className="text-xs font-bold text-amber-400 uppercase">Executive AI</span>
